@@ -1,10 +1,10 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: docs.larry-the-cat.service.gov.uk
+host: docs.mdtp-trg.service.gov.uk
 
 # Header-related options
 show_govuk_logo: true
-service_name: My First Service
-service_link: https://www.larry-the-cat.service.gov.uk
+service_name: TRG Contributor's Help Guide
+service_link: https://github.com/christinanevinuk/tdt-contributor
 phase: Beta
 
 # Links to show on right-hand-side of header
@@ -15,7 +15,7 @@ header_links:
   Support: https://www.larry-the-cat.service.gov.uk/support
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
-enable_search: false
+enable_search: true
 
 # Tracking ID from Google Analytics (e.g. UA-XXXX-Y)
 ga_tracking_id:
@@ -35,4 +35,4 @@ max_toc_heading_level: 6
 prevent_indexing: false
 
 show_contribution_banner: true
-github_repo: alphagov/YOUR_REPO
+github_repo: christinanevinuk/tdt-contributor
