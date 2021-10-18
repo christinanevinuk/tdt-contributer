@@ -1,21 +1,5 @@
-# Introduction to TRG Contributors' Help
+# Technical Reference Guide Contributors' Help
 
-## Intro
+This website provides help for contributors to the Technical Reference Guide (TRG). The TRG is the definitive guide on how to build and run services on HMRC's Multi-channel Digital Tax Platform (MDTP).
 
-Open `source/documentation/index.md` in your favourite text editor and start editing!
-
-You can write content in [Markdown](https://daringfireball.net/projects/markdown/) using **all** of the _usual_ syntax that you're used to!
-
-This means you can use things like tables:
-
-Food | Kind | Tasty?
---- | --- | ---
-Bananas | Fruit | Yes
-Aubergines | Vegetable | No
-Apricots | Fruit | Yes
-
-To change the title of the page or include additional files you'll need to edit `source/index.html.md.erb`.
-
-If you want slightly more control, you can always use <strong>HTML</strong>.
-
-For more detail and troubleshooting, take a look at the `README.md` file in the root of this project.
+This website contains four sections. The first section contains an overview of the TRG documentation lifecycle, workflow, and introductions to markdown and Git and GitHub. The second section, Installation, covers how to acquire a GitHub account, and installation of optional software, such as Git clients and code editors. The third section, Writing, contains the TRG documentation standard, optional page templates and guides on writing for the TRG. The last section, Building, covers how to use GitHub or a client to build and deploy the documentation to the TRG repository.
