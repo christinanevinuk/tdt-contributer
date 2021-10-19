@@ -1,10 +1,154 @@
 ---
 title: TRG documentation standard
-weight: 300
-last_reviewed_on: 2011-10-18
-review_in: 2 weeks
+weight: 100
+last_reviewed_on: 2021-10-18
+review_in: 22 weeks
 ---
+# TRG documentation standard
+This is the documentation standard for the Technical Reference Guide (TRG), which is available here: **Link to TRG**
 
-# TRG Documentation Standards
+The TRG is the definitive guide on how to build and run services on the Multi-channel Digital Tax Platform (MDTP).
 
-asohaosudhaosudh
+## Style Guide
+The TRG uses GOV.UK's style guide. This can be accessed here:  [GOV.UK style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style)
+
+It includes:
+
+- guidance on specific points of style, such as abbreviations and numbers
+- GOV.UK style for specific words and phrases, in terms of spelling, hyphenation and capitalisation
+If there is a point of style that isn't covered in the GOV.UK style guide, check [The Guardian style guide](http://www.theguardian.com/guardian-observer-style-guide-a). This is GOV.UK policy.
+
+## Requirements
+The following are the requirements for TRG content.
+
+### Mandatory Content
+Each page in the TRG must include:
+
+- **Owner** - this is the platform team who owns the page, and is responsible for its maintenance. See the Owner section below.
+- **Date of last review** - this is the date of the last review, or change of the content. See the Review section below.
+- **Date of next review** - this is the date the page is scheduled to be reviewed by the page owner, to ensure it is correct and up to date. See the Review section below.
+- **Help contact** - this is a link to further help on the page content. It can be to TRG-external support, or a relevant Slack channel. For more formal help, there is a link to raise a GitHub issue for the page. See the Help section below.
+- ***Label*** *- the label or labels should describe the content, possibly the user journey. This should be a curated list, but can be added to. See the Labels section below.*
+
+### General Content
+- **Table of contents**   If the contents of the page are long, firstly consider breaking the page into more than one page if possible. If not, ensure that the contents use headings that will be generated into a table of contents.
+
+*[AN: may not be inline TOC capability in TDT]
+TDT: Any level 2 headings will appear in the sidebar menu for a page. / Doc: headings will display in an inline (page-internal) TOC. A level 2 heading must be present for this to initiate.*
+
+- **Associated documents** - if there are other documents which should be used in association with the page's contents (for example, a test form or spec document), these should be linked to, not just mentioned.
+
+
+
+## Accessibility
+>"Accessibility means more than putting things online. It means making your content and design clear and simple enough so that most people can use it without needing to adapt it, while supporting those who do need to adapt things." [(GDS CDDO)](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps#meeting-accessibility-requirements)
+
+The TRG must comply with the GOV.UK accessibility requirements (level AA of the [Web Content Accessibility Guidelines WCAG 2.1](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20) as a minimum); its information and user interface components must be presented to users in ways they can perceive. Overview available here: [GOV.UK Accessibility Requirements](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)
+
+The TRG template ensures most accessibility requirements are met, however there are some that must be actioned manually.
+
+
+Main accessibility points for the TRG:
+
+- **enable keyboard navigation for all content** - the content of the page should be able to be navigated with a keyboard only. Some viewers may be unable to use a mouse, or be using assistive technology.
+- **text alternatives (alt text) must be provided for all images** - a description of the image must included, so it can be understood by people who cannot view the image. If you use button or character images in your content, you must name them in text alternatives also. You don't need to use the word 'button' however.
+This description is added in the 'alt' field when inserting an image in the content. See the Images section below.
+- **use SVG format when possible** - use SVG format for images which contain information such as infographics as they are compatible with magnifying software
+avoid moving, flashing or blinking content** - if you must include moving content, ensure it can be paused, stopped or hidden, and does not blink or flash more than 3 times a second. See the W3 Web Accessibility Initiative description for further details.
+- **alternatives must be provided for all time based media** - if you use time-based media in your content (for example, a YouTube video or audio file), you must provide an alternative that presents equivalent information (for example, captions or a text transcription and description)
+- **format headings properly** - use proper markdown to make headings, for example "### Options" to denote a level 3 heading "Options". Don't bold a word and use it as a heading. Improperly formatted headings won't register in the document outline, and are not accessible to some viewers.
+
+>Tip: To see if your page is accessibility compliant, use the [WAVE® Web Accessibility Evaluation Tool](https://wave.webaim.org/extension/) or [Accessibility Insights](https://accessibilityinsights.io/en/downloads/) browser extensions to check.
+
+
+
+## Images and Diagrams
+If a page contains involved technical or conceptual information, use graphics or diagrams to help explain the content. Also consider using data tables. Many people learn better with visual aids, rather than by reading.
+
+The TRG doesn't support text- or code-generated diagrams.
+
+All images will be stored in the TRG's image folder. The file path will be: [**https://github.com/hmrc/trg/source/images**](https://github.com/hmrc/trg/source/images)
+
+### Inserting images
+To insert an image into your content, use the following HTML:
+
+>`<img src="/images/imagefile" alt="image alt text" />`
+
+### Accessibility
+You must include alt text for an image, if the image has not been explained in surrounding content. This is to satisfy accessibility requirements. The text needs to convey the same meaning as the image. That is, if someone cannot see the image, they get the important information from the image in the alternative text. See the **Accessibility** section above.
+
+
+
+## Owner
+All pages must have an owner assigned to them, who is responsible for the maintenance of that page. It won't be possible to publish a page in the TRG if this has not been done.
+
+This is usually the platform team responsible for that content/part of the user journey. In the event a non-MDTP team, or multiple platform teams are responsible for that part of the content, alternates will be provided. The owner will be the team, rather than any individual that makes changes.
+Owner
+All pages must have an owner assigned to them, who is responsible for the maintenance of that page. It won't be possible to publish a page in the TRG if this has not been done.
+
+This is usually the platform team responsible for that content/part of the user journey. In the event a non-MDTP team, or multiple platform teams are responsible for that part of the content, alternates will be provided. The owner will be the team, rather than any individual that makes changes.
+
+*[AN: what alternatives will be provided?]*
+
+
+
+## Review
+### Review Dates
+These dates must be entered manually by the page writer or page owner.
+
+**Last Review Date:** - the review date must be entered manually whenever content is changed or reviewed.
+
+It is important this is kept up to date, as regular reviews of the content are scheduled and alerts sent, based on that date. The format for entering this date is: 'full year-month-day'.
+Example: last_reviewed_on: 2022-03-24
+
+**Next Review Date:** - the length of time between reviews is decided upon by the page owner or writer.
+
+This is set by the original writer, and varies depending on how often the team thinks the content will need review. The system will alert the Owner when this is due (either by email or in relevant Slack channel?). This date length may be changed if required. The format for entering the review length is: 'number weeks', 'number months', 'number years'.
+
+Examples: 8 weeks; 6 months; 1 year
+
+Both the last review date and next review date are placed in the header for the page. Example:
+
+```
+---
+title: Commissioning a new Service
+weight: 30
+last_reviewed_on: 2021-09-18
+review_in: 8 weeks
+---
+```
+
+Note: The next review date and page owner automatically displays at the bottom of the document online. If the review date has passed without action, a warning displays, noting the content may be out of date.
+
+
+### Changed Content Reviewer
+With the docs-as-code workflow, all changed documents are checked in their Pull Request (PR) by a team member with merge authority. If there are no blocks, they are then merged into the main TRG repository and published online. However for new documents, and big or technical changes to a page, the document should be reviewed.
+
+The reviewer:
+
+- **can be requested on the PR** - this can be using the Write tab on the Conversation tab, or by name in the Reviewers section.
+- **should be someone who did not write the document** - this ensures the information is correct and accurate.
+
+
+
+
+## Help
+The content in the TRG should be as clear and complete as possible, however further help should be made available if the user requires it.
+
+Every page must contain:
+
+- a link to the Slack channel of the platform team responsible for the page's content
+- a link that opens a GitHub issue for the page
+
+*[AN: these should be done automatically by the template?]*
+
+It can also contain:
+
+- links to offsite support, such as articles, wikis, or software support
+- links to internal support, such as documents on the platform team's Confluence space
+
+
+### Writing Support
+Further help on writing for the TRG is available on the **#community-docs** Slack channel.
+
+Further help with technical problems with the TRG is available on the **#trg-tech-support** Slack channel.
