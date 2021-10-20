@@ -6,11 +6,13 @@ review_in: 22 weeks
 ---
 # Page template
 
-Copy and paste the template content below the line to a new document. Replace the text text with your own content.
+Copy and paste the template content below the line (including the front matter code block) to a new document. Replace the text with your own content, editing the markdown as needed. 
+
+A help link to the page owner's Slack channel will be automatically generated, as will GitHub issue links for the page. Review alerts for the page owner will be automatically generated based on the metadata in the header/front matter.
 
 Please refer to the Documentation Standard for content style, formatting, accessibility and other requirements. Refer to the Writing Guidelines for content and procedure writing advice.
 
-<hr />
+- - -
 
 ```
 ---
@@ -21,7 +23,6 @@ review_in: 3 months
 owner: platform team
 ---
 ```
-
 \# Page title
 
 An introductory sentence, explaining what this page will cover.
@@ -36,7 +37,7 @@ If you have any factual or conceptual information that relates to the procedure,
 
 
 
-### Procedure title (heading 3)
+\### Procedure title (heading 3)
 
 1.  Use numbered lists for procedures, use bulleted lists for details or points
 
@@ -56,40 +57,20 @@ If you have any factual or conceptual information that relates to the procedure,
 
 
 
-### Content title (heading 3)
+
+\### Content title (heading 3)
 
 Any factual or conceptual information that relates to the procedure should be put after or before the procedure. You can reference it in the procedure, but don't put it in the procedure. If there are other documents which should be used in association with the page's contents (for example, a test form or spec document), these should be linked to, not just mentioned.
 
 If you want to list components, points or details, use a list like the following. The markdown - dashes will generate as bulletpoints in HTML:
 
-- detail1
+\- detail1
 
-- detail2
+\- detail2
 
-- detail3
-
-
-
-#### Content title (heading 4)
-
-If you want to write content which is included but subordinate to the heading 3 content, use a heading 4 title. Remember to use plenty of whitespace in your document, as it makes it much easier to read. If you want to create a table for details, use something like the following:
-
-Food | Type | Tropical
---- | --- | ---
-Banana | Fruit | Yes
-Aubergine | Vegetable | No
-Apple | Fruit | No
+\- detail3
 
 
+\#### Content title (heading 4)
 
-## Help (This may be generated automatically?)
-
-For further support, you can either contact the owner-platform-team Slack channel, or raise an issue in GitHub for this page. Click here to create an issue.
-
-
-
-Review box (this will be included automatically by the system)
-
-This page was last reviewed (date here) by (name of owner). It is due to be reviewed on (date).
-
-```
+If you want to write content which is included but subordinate to the heading 3 content, use a heading 4 title. Remember to use plenty of whitespace in your document, as it makes it much easier to read.
