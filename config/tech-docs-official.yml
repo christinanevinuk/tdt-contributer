@@ -10,6 +10,7 @@ phase: Beta
 # Links to show on right-hand-side of header
 header_links:
   About: https://www.larry-the-cat.service.gov.uk/about
+  Get Started: https://www.larry-the-cat.service.gov.uk/get-started
   Documentation: /
   Support: https://hmrcdigital.slack.com/messages/community-docs
 
@@ -34,4 +35,4 @@ max_toc_heading_level: 2
 prevent_indexing: false
 
 show_contribution_banner: true
-github_repo: christinanevinuk/tdt-contributor
+github_repo: alphagov/YOUR_REPO
