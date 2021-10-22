@@ -1,0 +1,93 @@
+---
+title: Learn markdown
+weight: 125
+last_reviewed_on: 2021-10-21
+review_in: 22 weeks
+---
+# Learn markdown
+Markdown's formatting syntax is easy to learn. It should take you an hour or so to run through a basic tutorial with examples.
+
+## Markdown
+
+- [Markdown Tutorial](https://www.markdowntutorial.com/) <br>
+An interactive introduction to markdown.
+
+- [Learning Markdown](https://www.linkedin.com/learning/learning-markdown/welcome)
+<img src="/images/icon-video.jpg" alt="video icon" />
+ Beginner series, 1:52 total. <br> LinkedIn video series, includes GFM section. LinkedIn account required.
+
+- [GitHub guide to GitHub markdown](https://guides.github.com/features/mastering-markdown/) <br>Introduction to GitHub-flavoured markdown.
+
+- [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) <br> GitHub guide to basic syntax
+- [GFM Spec](https://github.github.com/gfm/) <br>The technical specification for GFM.
+
+
+## Markdown glossary
+Useful to have bookmarked:
+
+- [Markdown Cheatsheet Online](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) <br>A downloadable PDF with markdown syntax and GFM syntax lists.
+
+- [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
+
+
+## Markdown editors
+
+### Markdown editors online
+If you are working directly in GitHub online to make changes to the TRG, you might want to see your content as you are writing it. Here are a couple of good online editors that show both the plain text and converted markdown in separate windows:
+
+- [StackEdit](https://stackedit.io/) - available offline. <br>Supports GFM, you can toggle other markdown types off. Has a formatting toolbar for easy syntax insertion. Also a has a variety of features such as save, import and export in various file formats to computer or the cloud.
+
+- [Dillinger](https://dillinger.io/) - available offline.<br> Has slightly fewer features, but includes save, import and export in various file formats to computer or the cloud.
+
+### Markdown editor apps
+You can use a variety of plain text editors, such as Notepad or TextEdit, to edit your content in. There are also a variety of code editors which can be used. The latter have GitHub accessibility also.
+
+If you want to work on these on your computer, a local copy of the TRG repository will be cloned onto your machine. You can then make changes to the contents from your machine, commit your changes and push them to the TRG GitHub repository, using the one program.
+
+- Atom
+- Visual Studio Code
+
+The following are lists of markdown editors for different OS:
+
+- Markdown apps for Linux
+- Markdown apps for Mac
+- Markdown apps for Windows
+
+## Government markdown guides
+The following are available:
+
+- [Markdown - How to publish on GOV.UK](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) <br> GOV.UK's markdown guidelines
+- [Write your content - markdown and HTML](https://tdt-documentation.london.cloudapps.digital/write_docs/content/#create-table-using-markdown) <br> GDS tech doc template guidelines
+
+>Government markdown usage is designed  for users of assistive technology.
+
+## Markdown tips
+### Markdown preview
+In code editors such as Atom and VSC you can also preview a markdown file (filename.md) as generated html. In Atom, select **Cmd/Ctrl + M**s. Other code editors will have similar functionality. The preview won't work for files with an extended suffix however, for example .html.md.erb.
+You can however preview your markdonw using your local host.
+
+- TDT: To see a preview of these extended suffix files, open a command prompt, navigate to the project directory, and type the bundle exec middleman server command. Then open your local host in your browser. If this doesn't open by default, the reply will include the URL for you to view the site on your local host.<br>
+Example:  View your site at " http://DESKTOP-EDJQ475.local:4567 ", " http://10.241.241.126:4567 "
+
+- Doc: To see a preview of these extended suffix files, open a command prompt, navigate to the project directory, and type the npm start command. Your local host will open the project in your browser.
+
+
+### Useful markdown syntax
+#### To display non-alphabetic characters without formatting
+Use a \ backslash in front of a non-alphabetic character to show it in the content without it causing formatting.<br>
+Example: `\<team>` will display as \<team>  when generated to a webpage. If you don't use the \ backslash, the <> brackets and word team will register as code, and won't display when generated.
+
+#### To add line breaks to block quotes or lists
+Use `<br>` to insert a line break in a block/code quote or list. Example: <br>
+Markdown is not as fully featured as HTML, so occasionally HTML is required for fancier formatting. Although markdown files can use a mix of both, it is best to have as few HTML insertions as possible, as the generator may not recognize some formats.
+
+#### To highlight a word in the middle of text
+Use \` backticks around a word to highlight it in the middle of text. <br> Example: \`word\` will display as `word`.
+
+#### To insert an image into your content
+Use the following code
+
+```
+<img src="/images/file-name.xxx" alt="alt text" />
+```
+You must include alt text for an image if the image has not been explained in surrounding content.s This is due to accessibility requirements.

@@ -2,7 +2,7 @@
 host: docs.larry-the-cat.service.gov.uk
 
 # Header-related options
-show_govuk_logo: true
+show_govuk_logo: false
 service_name: TRG Contributors' Help Guide
 service_link: https://www.larry-the-cat.service.gov.uk
 phase: Beta
