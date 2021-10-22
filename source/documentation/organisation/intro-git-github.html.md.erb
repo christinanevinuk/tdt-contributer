@@ -5,3 +5,35 @@ last_reviewed_on: 2021-10-21
 review_in: 22 weeks
 ---
 # Git and GitHub introduction
+
+##What Git is
+[Git](https://git-scm.com/) is a [distributed version control system (VCS)](https://en.wikipedia.org/wiki/Distributed_version_control). It is open source software, and usable on Linux, Mac and Windows systems.
+
+A very basic explanation is Git is a piece of software that tracks changes in a selected directory's files, keeping a complete history of all those changes. This means earlier versions of the files can be reverted to. It also allows team members to work on different parts of a project at the same time, and then merges all their separate changes into one source.
+
+'Distributed' means that a complete copy of the set of files, or repository, is mirrored on each machine that is working on it. This has several advantages, including the ability to work offline, as well as not relying on a single location as a backup.
+
+#### Resources: [Git official website](https://git-scm.com/)
+
+## What GitHub is
+GitHub is a cloud-based hosting service for Git repositories. HMRC has its own GitHub space (https://github.com/hmrc), which is where the Technical Reference Guide (TRG) repository is stored.
+
+You can perform all Git functions for the TRG repository in the GitHub website interface, if you prefer to do your work all online. GitHub also offers a downloadable app, GitHub Desktop which allows you to perform all Git functions. This app offers a user-friendly graphic interface (GUI) for interacting with GitHub, rather than using a command line interface (CLI). #
+
+#### Resources: [GitHub official website](https://github.com/)
+
+### Why we are using Git and GitHub in the TRG
+We are moving to the docs-as-code approach for how we edit, maintain and decommission TRG content. By employing the same processes and tools used in software development, we establish a more structured and regulated documentation lifecycle for the TRG. Technical contributors will be familiar with the processes, and the system is easy to learn for non-technical contributors.
+
+Git and GitHub are part of that software development process. As well as creating a reversible and clear audit trail, they allow multiple contributors to collaborate on the same project together.
+
+### How Git software works
+The Git software is downloaded and installed on your machine, where it will run in the background.
+
+To use version control on a project, Git is initialised in the project's directory in a .git folder. The .git folder contains all the information about your repository. This includes a history of all changes - like the exact edits, their author, the date and time. It also includes the current GitHub branch you're working on, and all other data that Git tracks - such as editor's comments on why the changes were made.
+
+The project's directory is now a Git repository, and its contents included in the VCS. This includes all its files, and all its subfolders and their files. If you were to only initialize Git in a subfolder of your project's folder, only that subfolder and its files would be included in the VCS. The parent folder and its other contents would be ignored.
+
+The TRG repository is stored on GitHub and already has Git initialised in it. If you want to work offline on TRG content, the TRG repository is cloned from GitHub onto your machine. The .git folder will already be present in the repository. You will only need to ensure you already have Git installed on your machine, you do not need to do anything else.
+
+> If you are unsure if you already have Git on your machine, open the command prompt/terminal and type `git` or `git --version`. If Git is installed, you will get a reply of a git commands list for the former query, or the git version number for the latter query.
